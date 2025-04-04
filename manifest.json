@@ -1,1 +1,1 @@
-{ "name": "AgentMob", "start_url": "Openmanus Ui Voice.html" }
+{ "name": "AgentMob", "short_name": "AgentMob", "start_url": ".", "display": "standalone" }

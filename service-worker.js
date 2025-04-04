@@ -1,1 +1,1 @@
-// PWA offline logic
+// Placeholder for offline logic

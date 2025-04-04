@@ -1,1 +1,1 @@
-// JavaScript to fetch agents from Supabase and toggle engines
+document.getElementById('agentGrid').textContent = 'Agents will load here from Supabase...';

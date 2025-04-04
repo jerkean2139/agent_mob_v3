@@ -1,6 +1,3 @@
-# AgentMob V3 Setup
+# AgentMob V3
 
-1. Unzip
-2. Open `Openmanus Ui Voice.html`
-3. Fill in `.env` keys
-4. Done!
+This is your working version. Deploy it using GitHub Pages or Live Server.
