@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent Mob Viewer</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+  <h1>AgentMob Debug View</h1>
+  <div id="debug-output"></div>
+
+  <script>
+    const SUPABASE_URL = 'https://wxiafhgopezovizvnkuu.supabase.co';
+    const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind4aWFmaGdvcGV6b3ZpenZua3V1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM3MzkxODcsImV4cCI6MjA1OTMxNTE4N30.izZ1L0nHvmxqiXVe8MGLWWoACKFGJtcthn6LgmwQeh4';
+    const sbClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+    async function testConnection() {
+      const debug = document.getElementById('debug-output');
+      try {
+        const { data, error } = await sbClient.from('agents').select('*');
+        if (error) {
+          debug.innerHTML = `<pre style="color: red;">Supabase Error: ${error.message}</pre>`;
+          console.error('Supabase error:', error);
+        } else {
+          debug.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+          console.log('Agents loaded:', data);
+        }
+      } catch (err) {
+        debug.innerHTML = `<pre style="color: red;">JavaScript Error: ${err.message}</pre>`;
+        console.error('Exception:', err);
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', testConnection);
+  </script>
+</body>
+</html>
