@@ -1,2 +1,47 @@
-body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 2rem; }
-h1 { text-align: center; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+  color: #333;
+}
+main {
+  padding: 2rem;
+}
+.section-title {
+  text-align: center;
+  margin-top: 3rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+.agent-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.agent-card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.category-tag {
+  display: inline-block;
+  margin: 0.25rem 0.25rem 0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  color: white;
+}
+.operations { background: #f44336; }
+.sales { background: #4caf50; }
+.lead\ gen { background: #2196f3; }
+.lead\ nurture { background: #9c27b0; }
+.brand\ advocacy { background: #ff9800; }

@@ -1,1 +1,8 @@
-{ "name": "AgentMob", "short_name": "AgentMob", "start_url": ".", "display": "standalone" }
+{
+  "name": "AgentMob V3",
+  "short_name": "AgentMob",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#333333"
+}

@@ -1,1 +1,1 @@
-// Placeholder for offline logic
+// Offline logic placeholder

@@ -1,3 +1,3 @@
 # AgentMob V3
 
-This is your working version. Deploy it using GitHub Pages or Live Server.
+Live Supabase agent UI restored with avatars, categories, and PWA support.
